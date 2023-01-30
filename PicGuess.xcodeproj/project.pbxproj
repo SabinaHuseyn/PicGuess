@@ -7,20 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D546B2A786E003873CE97F2 /* Pods_PicGuess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E0FAB5095F7BDBDEF56C57 /* Pods_PicGuess.framework */; };
+		1D5B43622979DA47003C09C8 /* TensorflowLiteInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B43612979DA47003C09C8 /* TensorflowLiteInit.swift */; };
 		1D5C678A29709F3D00DB7542 /* PicGuessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C678929709F3D00DB7542 /* PicGuessApp.swift */; };
 		1D5C678C29709F3D00DB7542 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C678B29709F3D00DB7542 /* ContentView.swift */; };
 		1D5C678E29709F4100DB7542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5C678D29709F4100DB7542 /* Assets.xcassets */; };
 		1D5C679129709F4100DB7542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5C679029709F4100DB7542 /* Preview Assets.xcassets */; };
 		1D5C67982973023700DB7542 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C67972973023700DB7542 /* ImagePicker.swift */; };
+		1D80ECD42988428E00B3F16A /* DogVsCat_metadata.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 1D80ECD32988428D00B3F16A /* DogVsCat_metadata.tflite */; };
+		1D80ECD629884D8E00B3F16A /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D80ECD529884D8E00B3F16A /* UIImage+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D5B43612979DA47003C09C8 /* TensorflowLiteInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorflowLiteInit.swift; sourceTree = "<group>"; };
 		1D5C678629709F3D00DB7542 /* PicGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5C678929709F3D00DB7542 /* PicGuessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicGuessApp.swift; sourceTree = "<group>"; };
 		1D5C678B29709F3D00DB7542 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D5C678D29709F4100DB7542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D5C679029709F4100DB7542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D5C67972973023700DB7542 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1D80ECD32988428D00B3F16A /* DogVsCat_metadata.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DogVsCat_metadata.tflite; sourceTree = "<group>"; };
+		1D80ECD529884D8E00B3F16A /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
+		62E0FAB5095F7BDBDEF56C57 /* Pods_PicGuess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicGuess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF263AEFFDB6EA6CEDCED55 /* Pods-PicGuess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicGuess.release.xcconfig"; path = "Target Support Files/Pods-PicGuess/Pods-PicGuess.release.xcconfig"; sourceTree = "<group>"; };
+		F586A2F3CEEA68A638ADFF17 /* Pods-PicGuess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicGuess.debug.xcconfig"; path = "Target Support Files/Pods-PicGuess/Pods-PicGuess.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D546B2A786E003873CE97F2 /* Pods_PicGuess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +50,8 @@
 			children = (
 				1D5C678829709F3D00DB7542 /* PicGuess */,
 				1D5C678729709F3D00DB7542 /* Products */,
+				CE4D14897C538A4E383FF5DB /* Pods */,
+				85B5E9C18382EDD8272A8639 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,11 +66,14 @@
 		1D5C678829709F3D00DB7542 /* PicGuess */ = {
 			isa = PBXGroup;
 			children = (
+				1D80ECD32988428D00B3F16A /* DogVsCat_metadata.tflite */,
 				1D5C678929709F3D00DB7542 /* PicGuessApp.swift */,
 				1D5C678B29709F3D00DB7542 /* ContentView.swift */,
 				1D5C67972973023700DB7542 /* ImagePicker.swift */,
+				1D5B43612979DA47003C09C8 /* TensorflowLiteInit.swift */,
 				1D5C678D29709F4100DB7542 /* Assets.xcassets */,
 				1D5C678F29709F4100DB7542 /* Preview Content */,
+				1D80ECD529884D8E00B3F16A /* UIImage+extension.swift */,
 			);
 			path = PicGuess;
 			sourceTree = "<group>";
@@ -70,6 +86,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		85B5E9C18382EDD8272A8639 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62E0FAB5095F7BDBDEF56C57 /* Pods_PicGuess.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE4D14897C538A4E383FF5DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F586A2F3CEEA68A638ADFF17 /* Pods-PicGuess.debug.xcconfig */,
+				9EF263AEFFDB6EA6CEDCED55 /* Pods-PicGuess.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +110,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D5C679429709F4100DB7542 /* Build configuration list for PBXNativeTarget "PicGuess" */;
 			buildPhases = (
+				5BD12BF5CA6148A68D944FD0 /* [CP] Check Pods Manifest.lock */,
 				1D5C678229709F3D00DB7542 /* Sources */,
 				1D5C678329709F3D00DB7542 /* Frameworks */,
 				1D5C678429709F3D00DB7542 /* Resources */,
@@ -129,17 +163,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D5C679129709F4100DB7542 /* Preview Assets.xcassets in Resources */,
+				1D80ECD42988428E00B3F16A /* DogVsCat_metadata.tflite in Resources */,
 				1D5C678E29709F4100DB7542 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5BD12BF5CA6148A68D944FD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PicGuess-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D5C678229709F3D00DB7542 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D80ECD629884D8E00B3F16A /* UIImage+extension.swift in Sources */,
+				1D5B43622979DA47003C09C8 /* TensorflowLiteInit.swift in Sources */,
 				1D5C67982973023700DB7542 /* ImagePicker.swift in Sources */,
 				1D5C678C29709F3D00DB7542 /* ContentView.swift in Sources */,
 				1D5C678A29709F3D00DB7542 /* PicGuessApp.swift in Sources */,
@@ -265,6 +327,7 @@
 		};
 		1D5C679529709F4100DB7542 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F586A2F3CEEA68A638ADFF17 /* Pods-PicGuess.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -274,11 +337,13 @@
 				DEVELOPMENT_TEAM = VDUH7U8HTM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to access the camera for taking photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,6 +359,7 @@
 		};
 		1D5C679629709F4100DB7542 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EF263AEFFDB6EA6CEDCED55 /* Pods-PicGuess.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,11 +369,13 @@
 				DEVELOPMENT_TEAM = VDUH7U8HTM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to access the camera for taking photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

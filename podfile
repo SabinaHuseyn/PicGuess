@@ -1,0 +1,4 @@
+target 'PicGuess' do
+  use_frameworks!
+  pod 'TensorFlowLiteTaskVision'
+end
